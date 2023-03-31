@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+        }
+
+        .mySlides {
+            display: none;
+            margin-top: 20vh;
+            z-index: -15454px;
+            position: relative;
+            position: relative;
+            left: -143px;
+        }
+
+
+        .mySlides img {
+            vertical-align: middle;
+            margin-left: 18vw;
+
+
+        }
+
+
+        .slideshow-container {
+            max-width: 1000px;
+            position: absolute;
+            margin: auto;
+        }
+
+
+        .dot {
+            height: 9px;
+            width: 9px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+            margin-top: 50vh;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+
+
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        .mySlides img {
+            width: 80vw;
+            height: auto;
+            margin-right: 0vw;
+
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 11px
+            }
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="navbar flex space">
+            <div class="left flex space">
+                <div class="logo"><img src="img/logo.png" alt="1"></div>
+                <ul class="un flex " id="a">
+                    <li><a href="https://www.myntra.com/shop/men">MEN</a></li>
+                    <li><a href="https://www.myntra.com/shop/women">WOMEN</a></li>
+                    <li><a href="https://www.myntra.com/shop/kids">KIDS</a></li>
+                    <li><a href="https://www.myntra.com/shop/home-living">HOME&LIVING</a></li>
+                    <li><a href="https://www.myntra.com/personal-care">BEAUTY</a></li>
+                    <li><a
+                            href="https://www.myntra.com/studio/home?appRoute=%7B%22url%22%3A%22%2Fstudio%2Fhome%22%7D">STUDIO<sup>NEW</sup></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right flex space">
+                <div>
+                    <button type="search" id="search"><i class="fas fa-search"></i> Search for products,brands and
+                        more</button>
+                </div>
+                <div>
+                    <button type="button" id="btn">update</button>
+                </div>
+                <div class="icon flex">
+                    <li><a href="#"><i class="fas fa-user"></i>
+                            <p class="p">profile</p>
+                        </a></li>
+                    <li><a href="#"><i class="fas fa-heart"></i>
+                            <p class="p">wishlist</p>
+                        </a></li>
+                    <li><a href="#"><i class="fas fa-shopping-bag"></i>
+                            <p class="p">bag</p>
+                        </a></li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+
+            <img src="img/c0.png">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/c1.png">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/c2.png">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/c3.png">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/c4.png">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/c5.png">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/c6.png">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/c7.png">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/c8.png">
+        </div>
+    </div>
+    <br>
+
+    <div class="poi" style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <pre>
+
+
+
+
+
+    </pre>
+    </div>
+    <div class="bell">
+        <a href=""><img src="img/bell.gif" onmousemove="f()" alt=""></a>
+    </div>
+    <div class="news">
+        <p>news hub</p>
+    </div>
+
+    <div class="card" id="first">
+        <div class="text">
+            DEAL OF THE DAY
+        </div>
+        <div class="card-img">
+            <a
+                href="https://www.myntra.com/sports-apparel?f=Brand%3AHRX%20by%20Hrithik%20Roshan%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A65.0_100.0_65.0%20TO%20100.0&sort=popularity"><img
+                    src="img/i1.png" alt=""></a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="text">
+            BEST OF MYNTRA EXCLUSIVE BRANDS
+        </div>
+        <div class="card-img">
+            <a
+                href="https://www.myntra.com/mfb-brand?f=Categories%3AKurtas%3A%3AGender%3Amen%20women%2Cwomen&rf=Discount%20Range%3A50.0_66.0_50.0%20TO%2066.0"><img
+                    src="img/i2.png" alt=""></a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="text">
+            TOP PICKS
+        </div>
+        <div class="card-img">
+            <a
+                href="https://www.myntra.com/men-topwear?f=Categories%3AShirts&rf=Price%3A296.0_799.0_296.0%20TO%20799.0"><img
+                    src="img/i3.png" alt=""></a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="text">
+            CATEGORIES TO BAG
+        </div>
+        <div class="card-img">
+            <a
+                href="https://www.myntra.com/sportscategory?f=Categories%3ASports%20Shoes%3A%3AGender%3Amen%2Cmen%20women">
+                <img src="img/i4.0.png" alt=""></a>
+            <a
+                href="https://www.myntra.com/ss-22?f=Categories%3ATshirts%3A%3ACharacter%3AAvengers%2CBatman%2CBlack%20Panther%2CCaptain%20America%2CChe%20Guevara%2CDeadpool%2CDisney%2CDonald%20Duck%2CDragon%20Ball%20Z%2CEminem%2CFlash%2CFriends%2CHarry%20Potter%2CHulk%2CIron%20Man%2CJoker%2CJustice%20League%2CLOKI%2CLinkin%20Park%2CLooney%20Tunes%2CMadagascar%2CMarvel%2CMarvel%20Comic%2CMickey%20%26%20Friends%2CMickey%20Mouse%2CMinecraft%2CMinions%2CNASA%2CNaruto%2CPink%20Floyd%2CPopeye%2CPunisher%2CRick%20%26%20Morty%2CSherlock%2CSpider-Man%2CStar%20Wars%2CSuperman%2CThor%2CTom%20%26%20Jerry%3A%3AGender%3Amen%2Cmen%20women&sort=new">
+                <img src="img/i4.1.png" alt=""></a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="text">
+            DEALS ON TOP BRANDS
+        </div>
+        <div class="card-img">
+            <a
+                href="https://www.myntra.com/kids?f=Brand%3AAllen%20Solly%20Junior%2CCherokee%2CDisney%20by%20Wear%20Your%20Mind%2CFame%20Forever%20by%20Lifestyle%2CGini%20and%20Jony%2CH%26M%2CHERE%26NOW%2CMINI%20KLUB%2CMarvel%20by%20Wear%20Your%20Mind%2CMiss%20%26%20Chief%2CPantaloons%20Junior%2CRed%20Tape%2CU.S.%20Polo%20Assn.%20Kids%2CUnited%20Colors%20of%20Benetton%2CYK%2CYK%20Disney%2CYK%20Marvel%2Cmax%3A%3ACategories%3ATops%2CTshirts&rf=Price%3A112.0_499.0_112.0%20TO%20499.0">
+                <img src="img/i5.1.png" alt=""></a>
+            <a
+                href="https://www.myntra.com/ss-22?f=Categories%3AJeans%3A%3AFade%3AHeavy%20Fade%3A%3AGender%3Amen%2Cmen%20women">
+                <img src="img/i5.2.png" alt=""></a>
+            <a
+                href="https://www.myntra.com/kids?f=Categories%3ALounge%20Shorts%2CShorts%2CSkirts&rf=Price%3A149.0_399.0_149.0%20TO%20399.0">
+                <img src="img/i5.3.png" alt=""></a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="text">
+            BRANDS AT SLASHED PRICES
+        </div>
+        <div class="card-img">
+            <a href="https://www.myntra.com/beachvacaylookm_933160"><img src="img/i6.png" alt="">
+        </div>
+    </div>
+    <div class="card">
+        <div class="text">
+            BEST BUYS
+        </div>
+        <div class="card-img">
+            <a href="https://www.myntra.com/ss-22?f=Brand%3AW"> <img src="img/i7.png" alt=""></a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="text">
+            MYNTRA LUXE
+        </div>
+        <div class="card-img">
+            <a href="https://www.myntra.com/shop/home-living"><img src="img/i8.png" alt=""></a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="text">
+            GIFTING CARDS
+        </div>
+        <div class="card-img">
+            <a href="https://www.myntra.com/giftcard/personalise?occasion=Wedding"><img src="img/i9.1.png" alt=""></a>
+            <a href="https://www.myntra.com/giftcard/personalise?occasion=Best%20Friend"><img src="img/i9.2.png"
+                    alt=""></a>
+
+        </div>
+    </div>
+    <div class="card">
+        <div class="text">
+            STYLECAST HOTTEST FINDS
+        </div>
+        <div class="card-img">
+            <a href="https://www.myntra.com/ss-22?f=Color%3ALime%20Green_5db653%3A%3AGender%3Amen%20women%2Cwomen"><img
+                    src="img/i10.png" alt=""></a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="text">
+            TRENDS FOR HER
+        </div>
+        <div class="card-img">
+            <a
+                href="https://www.myntra.com/studio/feed/playlist/37367/store-srishti-nadhani?appRoute=%7B%22url%22%3A%22%2Fstudio%2Ffeed%2Fplaylist%2F37367%2Fstore-srishti-nadhani%22%7D"><img
+                    src="img/i11.png" alt=""></a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="text">
+            TRENDS FOR HIM
+        </div>
+        <div class="card-img">
+            <a
+                href="https://www.myntra.com/studio/feed/playlist/32159/store-workwear-men?appRoute=%7B%22url%22%3A%22%2Fstudio%2Ffeed%2Fplaylist%2F32159%2Fstore-workwear-men%22%7D"><img
+                    src="img/i12.png" alt=""></a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="text">
+            BEST OF KIDSWEAR
+        </div>
+        <div class="card-img">
+            <a href="https://www.myntra.com/shop/kids"><img src="img/i13.png" alt=""></a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="text">
+            NEW IN TOP BRANDS
+        </div>
+        <div class="card-img">
+            <a
+                href="https://www.myntra.com/kids?f=Categories%3AJeans%2CTrousers&rf=Discount%20Range%3A50.0_100.0_50.0%20TO%20100.0"><img
+                    src="img/i14.png" alt=""></a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="text">
+            NEWNESS FOR EVERY OCCASION
+        </div>
+        <div class="card-img">
+            <a href="https://www.myntra.com/workoutathome_933170"> <img src="img/i15.1.png" alt=""></a>
+            <a href="https://www.myntra.com/summerwedding_933162"><img src="img/i15.2.png" alt=""></a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="text">
+            LATEST IN BEAUTY & GROOMING
+        </div>
+        <div class="card-img">
+            <a href="https://www.myntra.com/personal-care?f=Brand%3AAlan%20Truman%2CPhilips&sort=popularity"><img
+                    src="img/i16.1.png" alt=""></a>
+            <a href="https://www.myntra.com/personal-care?f=Brand%3AColorbar%2CINCOLOR&sort=popularity"><img
+                    src="img/i16.2.png" alt=""></a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="text">
+            UNMISSABLE THIS SEASON
+        </div>
+        <div class="card-img">
+            <a href="https://www.myntra.com/stylecastaw21"><img src="img/i17.png" alt=""></a>
+        </div>
+        <div class="card">
+            <div class="text">
+                BUDGET PICKS INFLUENCERS LOVE
+            </div>
+            <div class="card-img">
+                <a
+                    href="https://www.myntra.com/studio/feed/playlist/34404/store-tops-women?appRoute=%7B%22url%22%3A%22%2Fstudio%2Ffeed%2Fplaylist%2F34404%2Fstore-tops-women%22%7D"><img
+                        src="img/i18.1.png" alt=""></a>
+                <a href="https://www.myntra.com/ss-22?f=Brand%3ACalvin%20Klein%20Jeans"><img src="img/i18.2.png"
+                        alt=""></a>
+                <a href="https://www.myntra.com/netflix-party_933128"><img src="img/i18.3.png" alt=""></a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="text">
+                COLOURS OF THE SEASON
+            </div>
+            <div class="card-img">
+                <a
+                    href="https://www.myntra.com/mntra-uniques-kids?f=Categories%3ACasual%20Shoes%2CDresses%2CFlats%2CFlip%20Flops%2CJeans%2CKurta%20Sets%2CKurtas%2CLeggings%2CLounge%20Pants%2CLounge%20Shorts%2CNight%20suits%2CNightdress%2CShirts%2CShorts%2CSkirts%2CSleepsuit%2CTights%2CTops%2CTrack%20Pants%2CTrousers%2CTshirts&rf=Discount%20Range%3A60.0_100.0_60.0%20TO%20100.0"><img
+                        src="img/i19.png" alt=""></a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="text">
+                TOP INFLUENCERS EXCLUSIVE STYLES
+            </div>
+            <div class="card-img">
+                <a
+                    href="https://www.myntra.com/studio/feed/playlist/37366/store-arti-chauhan?appRoute=%7B%22url%22%3A%22%2Fstudio%2Ffeed%2Fplaylist%2F37366%2Fstore-arti-chauhan%22%7D"><img
+                        src="img/i20.png" alt=""></a>
+            </div>
+        </div>
+
+
+        <div class="foot">
+            <div class="one an">
+                <ul>
+                    <li>
+                        <h5>ONLINE SHOPPING</h5>
+                    </li>
+                    <li><a href="">Men</a></li>
+                    <li> <a href="">Women</a></li>
+                    <li> <a href="">Kids</a></li>
+                    <li> <a href="">Home & Living</a></li>
+                    <li> <a href="">Beauty</a></li>
+                    <li> <a href="">Gift Cards</a></li>
+                    <li> <a href="">Myntra Insiders</a></li>
+                </ul>
+            </div>
+            <div class="one">
+                <ul>
+                    <li>
+                        <h5>CUSTOMER POLICIES</h5>
+                    </li>
+                    <li> <a href="">Contact Us</a></li>
+                    <li> <a href="">FAQ</a></li>
+                    <li> <a href="">T&C</a></li>
+                    <li> <a href="">Terms Of Use</a></li>
+                    <li> <a href="">Track Orders</a></li>
+                    <li> <a href="">Shipping</a></li>
+                    <li> <a href="">Cancellation</a></li>
+                    <li> <a href="">Returns</a></li>
+                    <li> <a href="">Privacy policy</a></li>
+                    <li> <a href="">Grievance officer</a></li>
+                </ul>
+
+            </div>
+            <div class="two">
+                <ul id="u">
+                    <li>
+                        <h5>EXPERIENCE MYNTRA APP ON MOBILE</h5>
+                    </li>
+                    <div class="flex">
+                        <li> <a href="https://play.google.com/store/apps/details?id=com.myntra.android&hl=en_IN&gl=US"><img src="img/play.png" alt="google"></a></li>
+                        <li> <a href="https://apps.apple.com/in/app/myntra-fashion-shopping-app/id907394059"><img src="img/apple.png" alt="apple"></a></li>
+                    </div>
+                    <li>
+                        <h5>KEEP IN TOUCH</h5>
+                    </li>
+
+                    <div class="flex" id="log">
+                        <li><a href="#"><img src="img/fb.jpeg" alt="fb"></a></li>
+                        <li><a href="#"><img src="img/twtr.jpeg" alt="twtr"></a></li>
+                        <li><a href="#"><img src="img/yt.jpeg" alt="yt"></a></li>
+                        <li><a href="#"><img src="img/insta.jpeg" alt="inst"></a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="two">
+                <ul id="png">
+                    <li><img src="img/img1.png" alt=""></li>
+                    <li><img src="img/img.png" id="apple" alt=""></li>
+                </ul>
+            </div>
+
+
+        </div>
+
+
+</body>
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000);
+    }
+</script>
+
+</html>
