@@ -15,44 +15,13 @@ body {
 
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 500px) {
-    .text {
-        font-size: 11px
-    }
+#png{
+    margin-top: -51vh;
+    margin-left: 37vw;
 
-    #a {
-        display: none;
-
-    }
-    .poi{
-        margin: -20vh 0px;
-    }
-
-    img {
-       
-        height: auto;
-    }
-
-    .slideshow-container {
-
-        height: 11vh;
-
-    }
-    #search{
-        display: none;
-
-    }
-    #btn{
-        display: none;
-    }
-  .foot{
-    display: block;
-  }
-  .one{
-    margin: 2px 35px;
-  }
 }
+
+
 
 .flex {
     display: flex;
@@ -60,6 +29,7 @@ body {
 }
 
 .navbar {
+    z-index: 10;
     background: white;
     font-weight: 500;
     color: black;
@@ -118,6 +88,7 @@ a {
 }
 
 .card {
+
     margin-top: 10vh;
 }
 
@@ -273,4 +244,114 @@ sup {
  .un li a:hover{
     cursor: pointer;
     border-bottom: #000;
+}
+#exp{
+    text-align: center;
+    margin-left: 14vw;
+    margin-top: -3vh;
+}
+
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+
+    body ,html{
+        overflow-x: hidden;
+    }
+    .text {
+        font-size: 11px
+    }
+    #slide img{
+        position: relative;
+        left: 27%;
+    }
+.card-img img{
+    
+    margin-left: 4vw;
+
+}
+.foot a{
+    font-size: 8px;
+    text-align: center;
+}
+.foot{
+    font-size: 12px;
+}
+
+    #a {
+        display: none;
+
+    }
+    .poi{
+        margin: -20vh 0px;
+    }
+
+    img {
+       
+        height: auto;
+    }
+
+    .slideshow-container {
+
+        height: 11vh;
+
+    }
+    #search{
+        display: none;
+
+    }
+    #btn{
+        display: none;
+    }
+  .foot{
+    display: block;
+  }
+  .one{
+    margin: 2px 35px;
+  }
+
+.icon{
+    margin-left: 42vw;
+
+}
+  .foot{
+    display: flex;
+  }
+  .right{
+    margin-right: auto;
+
+  }
+  #log{
+    margin-left: 33vw;
+    margin-top: 20vh;
+    margin-left: 23vw;
+    
+}
+
+  
+  #log img{
+    width: auto;
+    height: 18px;
+    padding: 4px;
+   
+       
+}
+  
+  #u h5{
+    margin-left: 22vw;
+    
+  }
+  #exp{
+    margin-right: 14vw;
+  }
+  #lol{
+    position: relative;
+    top: 23vh;
+    left: 24vw;
+    margin-left: -4vw;
+
+  }
+
+
 }
